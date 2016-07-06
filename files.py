@@ -27,7 +27,7 @@ for root, dirs, files in os.walk(PATH):
         text = oFile.read() # database key
         oFile.close()
         date = datetime.datetime.fromtimestamp(os.path.getmtime(totalPath))
-        tFile = (totalPath, date.year, date.month) # database value
+        tFile = (totalPath, date.year, '{:0>2}'.format(date.month)) # database value
         check = database.setdefault(text, tFile) # check is tFile if text key was created
         if check != tFile and (check[1] > tFile[1] or (check[1] == tFile[1] and check[2] > tFile[2])): # if check != tFile than key was already created before AND year, month comparison
             database[text] = tFile # executed when key was already in database before AND date of modyfing is older at that key
