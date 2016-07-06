@@ -7,7 +7,7 @@
 import os, datetime, shutil
 
 # internals
-database = {}
+database = {} # {file's text : (file's path, year of last modify, month of last modify)}
 is_duplicate = False
 
 # input path
