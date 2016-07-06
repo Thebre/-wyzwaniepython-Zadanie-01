@@ -10,3 +10,6 @@ Wersja łatwa
 Wersja trudna 
 -To co łatwa
 -Znaleźć wszystkie duplikaty.
+
+
+ROZPAKUJ TEST.ZIP DO TEGO SAMEGO FOLDERU CO FILES.PY
